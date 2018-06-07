@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+< html>
+<head>
+<title>Page Title</title>
+ </head>
+< body>
+
+<h1>Welcome to the sign up Page </h1>
+<p>Please enter your first name and lastname </p>
+
+<form id = "Name">
+  <input autocomplete = "off" autofocus id ="First Name" />
+  <input id ="Last Name" />
+  <input type = "submit" />
+  
+  </form>
+<script>
+documen.getElementById("Name").onsubmit
+</script>
+
+    </body>
+</html>
