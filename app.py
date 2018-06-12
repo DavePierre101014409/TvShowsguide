@@ -1,5 +1,6 @@
 import os 
 import smtplib
+import csv
 
 from flask import Flask, render_template, request 
 
@@ -30,6 +31,13 @@ def register():
     students.append()
     
     return redirect("/main")
+    
+    file= open("registants.csv", "a")
+    writer =csv.writer(file)
+    writer.writerow((request.form.get(""), request.form.get("")))
+    file.close()
+    return render_template("sucess.html")
+    
 
 @app.route("/main")
 def main():
