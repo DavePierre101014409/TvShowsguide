@@ -22,6 +22,11 @@ def register():
     if not firstname or not lastName or not emailName :
         # return failure
         return render_template("")
+    message = "You are registered "
+    server =smtplib.SMTP("smtp.gmail.com",587)
+    server.starttls()
+    server.login("Dave email adress", os.getenv("PASSWORD"))
+    server.sendmail("Same thing",emailName,message)
     students.append()
     
     return redirect("/main")
