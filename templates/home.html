@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
- </head>
-<body>
+{% extends "layout.html" %}
 
+{% block body %}
 <h1>My Welcome to the TvShow Guide </h1>
 
 <img src="" alt="W3Schools.com" width="104" height="142">
@@ -13,6 +9,5 @@
 onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
 
-<p id="demo"></p>
-    </body>
-</html>
+<p id="demo"></p
+{% endblock %}
